@@ -10,7 +10,7 @@
 
 @class CustomAlertView;
 
-@protocol AlertActions <NSObject>
+@protocol CustomAlertViewDelegate <NSObject>
 
 -(void)alert:(CustomAlertView *)alert ButtonclickedAtIndex:(NSInteger)index;
 -(void)alert:(CustomAlertView *)alert;
@@ -20,7 +20,7 @@
 
 @interface CustomAlertView : UIView
     
-@property(nonatomic,weak) id<AlertActions> delegate;
+@property(nonatomic,weak) id<CustomAlertViewDelegate> delegate;
     
 -(id)initWithMessage:(NSString *)message andLeftButtonTitle:(NSString *)lTitle andRightButtonTitle:(NSString *)rTitle;
     

@@ -12,7 +12,6 @@
 
 @interface CommonFunctionClass : NSObject
 
-
 -(void)showAlert :(NSString *)message :(NSString*)title :(UIViewController*)viewController;
 
 -(NSString*)trim :(NSString*)stringToTrim;

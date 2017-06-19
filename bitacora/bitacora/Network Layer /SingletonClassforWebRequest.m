@@ -10,7 +10,7 @@
 
 @implementation SingletonClassforWebRequest
 
-#pragma mark Singleton Methods
+#pragma mark - Singleton Methods
 
 + (id)sharedManager{
     static SingletonClassforWebRequest *sharedMyManager = nil;
@@ -23,7 +23,6 @@
 
 - (id)init{
     if (self = [super init]){
-        
     }
     return self;
 }
@@ -54,7 +53,7 @@
 }
 
 //for POST Method
--(void)commonPOSTMethod :(NSString *)strPOSTURL :(void (^) (NSDictionary *dictionary, NSError *error))completionBlock {
+-(void)commonPOSTMethod :(NSString *)strPOSTURL :(void (^)(NSDictionary *dictionary, NSError *error))completionBlock {
     NSString *strUrl = strPOSTURL;
     NSURL *url = [NSURL URLWithString:strUrl];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];

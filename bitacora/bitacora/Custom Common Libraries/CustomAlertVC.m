@@ -64,6 +64,7 @@
         txtInCharge.returnKeyType = UIReturnKeyNext;
         txtInCharge.inputView = customPickerView;
         
+        // creating toolbar for picker view
         UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
         [toolBar setBackgroundColor:[UIColor grayColor]];
         [toolBar setTintColor:[UIColor blackColor]];
@@ -260,8 +261,9 @@
         [btn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         
         btnClose.tag = 0;
-        [btnClose addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         
+        // button actions
+        [btnClose addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [btnCalender addTarget:self action:@selector(calenderClicked:) forControlEvents:UIControlEventTouchUpInside];
 
         self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
@@ -300,13 +302,10 @@
     
     layoutConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:window attribute:NSLayoutAttributeTop  multiplier:1 constant:0.0];
     [window addConstraint:layoutConstraint];
-    
     layoutConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:window attribute:NSLayoutAttributeRight  multiplier:1 constant:0.0];
     [window addConstraint:layoutConstraint];
-    
     layoutConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:window attribute:NSLayoutAttributeBottom  multiplier:1 constant:0.0];
     [window addConstraint:layoutConstraint];
-    
     layoutConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:window attribute:NSLayoutAttributeLeft  multiplier:1 constant:0.0];
     [window addConstraint:layoutConstraint];
     

@@ -10,7 +10,7 @@
 
 @class CustomAlertVC;
 
-@protocol AlertActions <NSObject>
+@protocol CustomAlertVCDelegate <NSObject>
 
 -(void)alert:(CustomAlertVC *)alert ButtonclickedAtIndex:(NSInteger)index;
 
@@ -19,7 +19,7 @@
 
 @interface CustomAlertVC : UIView <UIPickerViewDelegate, UIPickerViewDataSource,  UITextFieldDelegate>
     
-@property(nonatomic,weak) id<AlertActions> delegate;
+@property(nonatomic,weak) id<CustomAlertVCDelegate> delegate;
     
 -(id)initWithArray:(NSArray *)comboArray andCancelButtonTitle:(NSString *)cTitle;
     
