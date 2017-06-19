@@ -18,6 +18,9 @@
 		B788BAC81EF7C684004F78AB /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B788BAC61EF7C684004F78AB /* CustomAlertView.m */; };
 		B788BACC1EF7C6BE004F78AB /* SingletonClassforWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B788BACB1EF7C6BE004F78AB /* SingletonClassforWebRequest.m */; };
 		B788BACF1EF7C6CD004F78AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B788BACE1EF7C6CD004F78AB /* ViewController.m */; };
+		BC44BCEE1EF80739001EBAE1 /* CustomViewForActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC44BCED1EF80739001EBAE1 /* CustomViewForActivityIndicator.m */; };
+		BC44BCF31EF80954001EBAE1 /* CustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BC44BCF01EF80954001EBAE1 /* CustomImage.m */; };
+		BC44BCF41EF80954001EBAE1 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC44BCF21EF80954001EBAE1 /* CustomView.m */; };
 		E8C7ADF927376CB43C23E07C /* libPods-bitacora.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CF242117FCC6E151BF44D5 /* libPods-bitacora.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,12 @@
 		B788BACB1EF7C6BE004F78AB /* SingletonClassforWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SingletonClassforWebRequest.m; path = "Network Layer /SingletonClassforWebRequest.m"; sourceTree = "<group>"; };
 		B788BACD1EF7C6CD004F78AB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "View Controllers/View Controller/ViewController.h"; sourceTree = "<group>"; };
 		B788BACE1EF7C6CD004F78AB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "View Controllers/View Controller/ViewController.m"; sourceTree = "<group>"; };
+		BC44BCEC1EF80739001EBAE1 /* CustomViewForActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomViewForActivityIndicator.h; path = "Custom Common Libraries/CustomViewForActivityIndicator.h"; sourceTree = "<group>"; };
+		BC44BCED1EF80739001EBAE1 /* CustomViewForActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomViewForActivityIndicator.m; path = "Custom Common Libraries/CustomViewForActivityIndicator.m"; sourceTree = "<group>"; };
+		BC44BCEF1EF80954001EBAE1 /* CustomImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomImage.h; path = "Custom Common Libraries/CustomImage.h"; sourceTree = "<group>"; };
+		BC44BCF01EF80954001EBAE1 /* CustomImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomImage.m; path = "Custom Common Libraries/CustomImage.m"; sourceTree = "<group>"; };
+		BC44BCF11EF80954001EBAE1 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = "Custom Common Libraries/CustomView.h"; sourceTree = "<group>"; };
+		BC44BCF21EF80954001EBAE1 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = "Custom Common Libraries/CustomView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +151,16 @@
 		B788BAAE1EF7C356004F78AB /* Common Custom Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BC44BCEF1EF80954001EBAE1 /* CustomImage.h */,
+				BC44BCF01EF80954001EBAE1 /* CustomImage.m */,
+				BC44BCF11EF80954001EBAE1 /* CustomView.h */,
+				BC44BCF21EF80954001EBAE1 /* CustomView.m */,
 				B788BAC31EF7C684004F78AB /* CustomAlertVC.h */,
 				B788BAC41EF7C684004F78AB /* CustomAlertVC.m */,
 				B788BAC51EF7C684004F78AB /* CustomAlertView.h */,
 				B788BAC61EF7C684004F78AB /* CustomAlertView.m */,
+				BC44BCEC1EF80739001EBAE1 /* CustomViewForActivityIndicator.h */,
+				BC44BCED1EF80739001EBAE1 /* CustomViewForActivityIndicator.m */,
 			);
 			name = "Common Custom Libraries";
 			sourceTree = "<group>";
@@ -314,7 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC44BCF31EF80954001EBAE1 /* CustomImage.m in Sources */,
 				B788BAC81EF7C684004F78AB /* CustomAlertView.m in Sources */,
+				BC44BCF41EF80954001EBAE1 /* CustomView.m in Sources */,
 				B788BA961EF7C13F004F78AB /* AppDelegate.m in Sources */,
 				B788BACF1EF7C6CD004F78AB /* ViewController.m in Sources */,
 				B788BA9F1EF7C13F004F78AB /* bitacora.xcdatamodeld in Sources */,
@@ -322,6 +339,7 @@
 				B788BAC71EF7C684004F78AB /* CustomAlertVC.m in Sources */,
 				B788BA931EF7C13F004F78AB /* main.m in Sources */,
 				B788BACC1EF7C6BE004F78AB /* SingletonClassforWebRequest.m in Sources */,
+				BC44BCEE1EF80739001EBAE1 /* CustomViewForActivityIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +496,7 @@
 				B788BAAA1EF7C13F004F78AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
