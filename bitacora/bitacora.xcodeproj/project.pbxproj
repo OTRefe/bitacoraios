@@ -18,9 +18,13 @@
 		B788BAC81EF7C684004F78AB /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B788BAC61EF7C684004F78AB /* CustomAlertView.m */; };
 		B788BACC1EF7C6BE004F78AB /* SingletonClassforWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B788BACB1EF7C6BE004F78AB /* SingletonClassforWebRequest.m */; };
 		B788BACF1EF7C6CD004F78AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B788BACE1EF7C6CD004F78AB /* ViewController.m */; };
+		E8C7ADF927376CB43C23E07C /* libPods-bitacora.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CF242117FCC6E151BF44D5 /* libPods-bitacora.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037760911A727C7DD6A05E1C /* Pods-bitacora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitacora.release.xcconfig"; path = "Pods/Target Support Files/Pods-bitacora/Pods-bitacora.release.xcconfig"; sourceTree = "<group>"; };
+		2164EA383F8B1D281A59BC40 /* Pods-bitacora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitacora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bitacora/Pods-bitacora.debug.xcconfig"; sourceTree = "<group>"; };
+		36CF242117FCC6E151BF44D5 /* libPods-bitacora.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bitacora.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B788BA8E1EF7C13F004F78AB /* bitacora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bitacora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B788BA921EF7C13F004F78AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B788BA941EF7C13F004F78AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,17 +52,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C7ADF927376CB43C23E07C /* libPods-bitacora.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1B0A20A59AE9BDE125C692 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36CF242117FCC6E151BF44D5 /* libPods-bitacora.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B788BA851EF7C13F004F78AB = {
 			isa = PBXGroup;
 			children = (
 				B788BA901EF7C13F004F78AB /* bitacora */,
 				B788BA8F1EF7C13F004F78AB /* Products */,
+				F03D5176D5BD5F0361DB0805 /* Pods */,
+				1B1B0A20A59AE9BDE125C692 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +183,15 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+		F03D5176D5BD5F0361DB0805 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2164EA383F8B1D281A59BC40 /* Pods-bitacora.debug.xcconfig */,
+				037760911A727C7DD6A05E1C /* Pods-bitacora.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B788BAA81EF7C13F004F78AB /* Build configuration list for PBXNativeTarget "bitacora" */;
 			buildPhases = (
+				EC068ED486FA89D0A94337ED /* [CP] Check Pods Manifest.lock */,
 				B788BA8A1EF7C13F004F78AB /* Sources */,
 				B788BA8B1EF7C13F004F78AB /* Frameworks */,
 				B788BA8C1EF7C13F004F78AB /* Resources */,
+				BAE5B97A63AA2421FCECF584 /* [CP] Embed Pods Frameworks */,
+				749D5FCB109C606AF63235CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +260,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		749D5FCB109C606AF63235CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bitacora/Pods-bitacora-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE5B97A63AA2421FCECF584 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bitacora/Pods-bitacora-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC068ED486FA89D0A94337ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B788BA8A1EF7C13F004F78AB /* Sources */ = {
@@ -362,6 +437,7 @@
 		};
 		B788BAA91EF7C13F004F78AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2164EA383F8B1D281A59BC40 /* Pods-bitacora.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = bitacora/Info.plist;
@@ -373,6 +449,7 @@
 		};
 		B788BAAA1EF7C13F004F78AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 037760911A727C7DD6A05E1C /* Pods-bitacora.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = bitacora/Info.plist;
