@@ -10,7 +10,6 @@
 		B788BA931EF7C13F004F78AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B788BA921EF7C13F004F78AB /* main.m */; };
 		B788BA961EF7C13F004F78AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B788BA951EF7C13F004F78AB /* AppDelegate.m */; };
 		B788BA9C1EF7C13F004F78AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B788BA9A1EF7C13F004F78AB /* Main.storyboard */; };
-		B788BA9F1EF7C13F004F78AB /* bitacora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B788BA9D1EF7C13F004F78AB /* bitacora.xcdatamodeld */; };
 		B788BAA11EF7C13F004F78AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B788BAA01EF7C13F004F78AB /* Assets.xcassets */; };
 		B788BAA41EF7C13F004F78AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B788BAA21EF7C13F004F78AB /* LaunchScreen.storyboard */; };
 		B788BAC21EF7C5C6004F78AB /* CommonFunctionClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B788BAC11EF7C5C6004F78AB /* CommonFunctionClass.m */; };
@@ -21,6 +20,8 @@
 		BC44BCEE1EF80739001EBAE1 /* CustomViewForActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC44BCED1EF80739001EBAE1 /* CustomViewForActivityIndicator.m */; };
 		BC44BCF31EF80954001EBAE1 /* CustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BC44BCF01EF80954001EBAE1 /* CustomImage.m */; };
 		BC44BCF41EF80954001EBAE1 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC44BCF21EF80954001EBAE1 /* CustomView.m */; };
+		BC4521191EF8F4E900F9FCAB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4521181EF8F4E900F9FCAB /* LoginViewController.m */; };
+		BC45211C1EF8FAC100F9FCAB /* bitacora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC45211A1EF8FAC100F9FCAB /* bitacora.xcdatamodeld */; };
 		E8C7ADF927376CB43C23E07C /* libPods-bitacora.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CF242117FCC6E151BF44D5 /* libPods-bitacora.a */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +34,6 @@
 		B788BA941EF7C13F004F78AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B788BA951EF7C13F004F78AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B788BA9B1EF7C13F004F78AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B788BA9E1EF7C13F004F78AB /* bitacora.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bitacora.xcdatamodel; sourceTree = "<group>"; };
 		B788BAA01EF7C13F004F78AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B788BAA31EF7C13F004F78AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B788BAA51EF7C13F004F78AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +54,9 @@
 		BC44BCF01EF80954001EBAE1 /* CustomImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomImage.m; path = "Custom Common Libraries/CustomImage.m"; sourceTree = "<group>"; };
 		BC44BCF11EF80954001EBAE1 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = "Custom Common Libraries/CustomView.h"; sourceTree = "<group>"; };
 		BC44BCF21EF80954001EBAE1 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = "Custom Common Libraries/CustomView.m"; sourceTree = "<group>"; };
+		BC4521171EF8F4E900F9FCAB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BC4521181EF8F4E900F9FCAB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BC45211B1EF8FAC100F9FCAB /* bitacora.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bitacora.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +137,7 @@
 		B788BAAC1EF7C341004F78AB /* Data Layer */ = {
 			isa = PBXGroup;
 			children = (
-				B788BA9D1EF7C13F004F78AB /* bitacora.xcdatamodeld */,
+				BC45211A1EF8FAC100F9FCAB /* bitacora.xcdatamodeld */,
 			);
 			name = "Data Layer";
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 		B788BAB11EF7C384004F78AB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC4521161EF8F23100F9FCAB /* Login */,
 				B788BACD1EF7C6CD004F78AB /* ViewController.h */,
 				B788BACE1EF7C6CD004F78AB /* ViewController.m */,
 			);
@@ -196,6 +200,15 @@
 				B788BAC91EF7C6AC004F78AB /* bitacora_Constants.h */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		BC4521161EF8F23100F9FCAB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BC4521171EF8F4E900F9FCAB /* LoginViewController.h */,
+				BC4521181EF8F4E900F9FCAB /* LoginViewController.m */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		F03D5176D5BD5F0361DB0805 /* Pods */ = {
@@ -334,11 +347,12 @@
 				BC44BCF41EF80954001EBAE1 /* CustomView.m in Sources */,
 				B788BA961EF7C13F004F78AB /* AppDelegate.m in Sources */,
 				B788BACF1EF7C6CD004F78AB /* ViewController.m in Sources */,
-				B788BA9F1EF7C13F004F78AB /* bitacora.xcdatamodeld in Sources */,
 				B788BAC21EF7C5C6004F78AB /* CommonFunctionClass.m in Sources */,
 				B788BAC71EF7C684004F78AB /* CustomAlertVC.m in Sources */,
+				BC4521191EF8F4E900F9FCAB /* LoginViewController.m in Sources */,
 				B788BA931EF7C13F004F78AB /* main.m in Sources */,
 				B788BACC1EF7C6BE004F78AB /* SingletonClassforWebRequest.m in Sources */,
+				BC45211C1EF8FAC100F9FCAB /* bitacora.xcdatamodeld in Sources */,
 				BC44BCEE1EF80739001EBAE1 /* CustomViewForActivityIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,13 +515,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B788BA9D1EF7C13F004F78AB /* bitacora.xcdatamodeld */ = {
+		BC45211A1EF8FAC100F9FCAB /* bitacora.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B788BA9E1EF7C13F004F78AB /* bitacora.xcdatamodel */,
+				BC45211B1EF8FAC100F9FCAB /* bitacora.xcdatamodel */,
 			);
-			currentVersion = B788BA9E1EF7C13F004F78AB /* bitacora.xcdatamodel */;
-			path = bitacora.xcdatamodeld;
+			currentVersion = BC45211B1EF8FAC100F9FCAB /* bitacora.xcdatamodel */;
+			name = bitacora.xcdatamodeld;
+			path = "Data Layer/bitacora.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

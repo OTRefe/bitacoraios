@@ -9,6 +9,7 @@
 #ifndef bitacora_Constants.h
 #define bitacora_Constants.h
 
-#define GETURL @"http://content.guardianapis.com/search?api-key=test"
+
+#define LOGINURL @"https://bitacorapre.opentrends.net/bitacoraweb"
 
 #endif /* bitacora_Constants.h */
